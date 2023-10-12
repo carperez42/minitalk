@@ -1,0 +1,15 @@
+*.pdf
+**/
+*.out
+*.exe
+*.a
+*.txt
+.DS_Store
+main*
+*.PNG
+*.png
+util*
+Util*
+test*
+Test*
+malloc*
