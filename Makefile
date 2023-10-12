@@ -62,12 +62,12 @@ $(DIR_OBJ)%.o:	$(DIR_SRC)%.c | $(COM_TEMPS)
 					@$(COM_COMPILER) $(COM_FLAGS) -c $< -o $@
 -include $(DIR_OBJ)%.d
 
-#SERVER_PROCES compilation
+#SERVER_PROCESS compilation
 $(SERVER): $(filter-out $(DIR_OBJ)$(CLIENT).o,$(OBJECTS)) $(DIR_BIN)$(NAME)
 					@$(COM_COMPILER) $(COM_FLAGS) $^ -o $@
 					$(info [SUCCESS] server created.)
 
-#CLIENT_CLIENT compilation
+#CLIENT_PROCESS compilation
 $(CLIENT): $(filter-out $(DIR_OBJ)$(SERVER).o,$(OBJECTS)) $(DIR_BIN)$(NAME)
 					@$(COM_COMPILER) $(COM_FLAGS) $^ -o $@
 					$(info [SUCCESS] client created.) 
